@@ -114,7 +114,7 @@ const getAllProperties = function (options, limit = 10) {
   const queryParams = [];
 
   let queryString = `
-  SELECT properties.*, avg(property_reviews.rating) as average_rating
+  SELECT properties.*, AVG(property_reviews.rating) as average_rating
   FROM properties
   JOIN property_reviews ON properties.id = property_id
   WHERE 1=1
@@ -122,7 +122,7 @@ const getAllProperties = function (options, limit = 10) {
 
   if (options.city) {
     queryParams.push(`%${options.city}%`);
-    queryString += `WHERE city LIKE $${queryParams.length} `;
+    queryString += `AND city LIKE $${queryParams.length} `;
   }
   
   if (options.owner_id) {
