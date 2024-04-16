@@ -39,3 +39,15 @@ Therefore, to validate the output, just check that the property has been added b
 - psql
 
 ## Screenshots
+
+<b>Create Listing</b>
+
+!["Create Listing"](https://github.com/TrevorJohnSullivan/LightBnB/blob/master/docs/lbnb%20-%20createlisting.png)
+
+<b>My Reservations</b>
+
+!["My Reservations"](https://github.com/TrevorJohnSullivan/LightBnB/blob/master/docs/lbnb%20-%20myreservations.png)
+
+<b>Search Listings</b>
+
+!["Search Listings"](https://github.com/TrevorJohnSullivan/LightBnB/blob/master/docs/lbnb%20-%20search.png)
